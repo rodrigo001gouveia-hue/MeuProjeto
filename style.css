@@ -1,0 +1,62 @@
+body {
+    background-color:  #121214;
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#visualizador {
+    width: 400px;
+    height: 200px;
+    background-color: #1e1e24;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 2px solid #323238;
+    overflow: hidden;
+}
+
+.forma {
+    width: 50px;
+    height: 50px;
+    background-color: #00adb5;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out, background-color 0.3s;
+}
+
+.piano {
+    display: flex;
+    gap: 10px;
+}
+
+.tecla {
+    background-color: #eeeeee;
+    color: #121214;
+    border: none;
+    padding: 30px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #b5b5b5;
+    transition: all 0.1s;
+}
+
+.tecla:active, .tecla.ativa {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #b5b5b5;
+    background-color: #00adb5;
+    color: white;
+}
